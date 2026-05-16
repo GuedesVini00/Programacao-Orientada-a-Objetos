@@ -1,0 +1,23 @@
+package com.clinica.bean;
+import java.time.LocalDate;
+public class Receita extends Procedimento {
+
+    public Receita(){
+        super();
+    }
+
+    public Receita(LocalDate pData, String pDescritivo) throws Exception{
+        setData(pData);
+        setDescritivo(pDescritivo);
+    }
+
+    public void mostrar(){
+        System.out.println("---RECEITA---");
+        super.mostrar();
+    }
+
+    public void preescrever(){
+
+    }
+    
+}

@@ -1,0 +1,23 @@
+package com.clinica.bean;
+import java.time.LocalDate;
+
+public class Exame extends Procedimento {
+
+    public Exame(){
+        super();
+    }
+    public Exame( LocalDate pData, String pDescritivo)throws Exception {
+        setData(pData);
+        setDescritivo(pDescritivo);
+    }
+
+    public void mostrar(){
+        System.out.println("---Exame---");
+        super.mostrar();
+    }
+    
+    void solicitar(){
+
+    }
+
+}
